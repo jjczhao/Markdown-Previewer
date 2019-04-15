@@ -83,7 +83,7 @@ class Txteditor extends React.Component{
                         <h2>Previewer</h2>
                     </div>
                     <Row className="previewer-wrapper">
-                        <Col dangerouslySetInnerHTML={{__html:marked(this.state.input,{sanitize: true,gfm: true, breaks:true})}}>
+                        <Col id="preview" dangerouslySetInnerHTML={{__html:marked(this.state.input,{sanitize: true,gfm: true, breaks:true})}}>
                         </Col>
                     </Row>
                 </Container>
